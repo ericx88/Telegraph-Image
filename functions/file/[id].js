@@ -26,6 +26,8 @@ export async function onRequest(context) {  // Contents of context object
          headers: request.headers,
          body: request.body,
      });
+    response.headers.append('Access-Control-Allow-Origin', '*');
+    response.headers.append('Access-Control-Max-Age', '86400');
     return response;
   }
   
