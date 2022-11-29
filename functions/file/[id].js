@@ -21,7 +21,7 @@ export async function onRequest(context) {  // Contents of context object
         }
     }
      
-     const response = fetch('https://telegra.ph/' + url.pathname + url.search, {
+     let response = fetch('https://telegra.ph/' + url.pathname + url.search, {
          method: request.method,
          headers: request.headers,
          body: request.body,
