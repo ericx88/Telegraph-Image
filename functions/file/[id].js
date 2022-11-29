@@ -26,6 +26,7 @@ export async function onRequest(context) {  // Contents of context object
          headers: request.headers,
          body: request.body,
      });
+    response.headers.add('Access-Control-Allow-Origin', '*');
     return response;
   }
   
