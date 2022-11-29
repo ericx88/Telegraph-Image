@@ -26,7 +26,6 @@ export async function onRequest(context) {  // Contents of context object
          method: request.method,
          headers: request.headers,
          body: request.body,
-         referrerPolicy: 'no-referrer',
      });
     return response;
   }
