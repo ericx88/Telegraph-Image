@@ -22,6 +22,7 @@ export async function onRequest(context) {  // Contents of context object
     }
      
      let response = fetch('https://telegra.ph/' + url.pathname + url.search, {
+         mode: 'no-cors',
          method: request.method,
          headers: request.headers,
          body: request.body,
